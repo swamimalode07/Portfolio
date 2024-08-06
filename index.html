@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <div class="background-one">
+        <div class="navbar">
+            <h3><a href="#about">About</a></h3>
+            <h3><a href="resume.pdf" download>Resume</a></h3>
+            <h3><a href="https://www.linkedin.com/in/swami-malode-566541251/">LinkedIn</a></h3>
+            <h3><a href="mailto:swamimalodeofficial@gmail.com">Contact me</a></h3>
+
+        </div>
+        <div class="mid">
+            <img src="file.png" alt="">
+            <div class="text">
+                <h1>SWAMI MALODE</h1>
+                <h3>Web Developer</h3>
+            </div>
+        </div>
+    </div>
+    <div class="background-two">
+        <h1>Skills</h1>
+        <div class="card-container">
+            <div class="card-wrapper">
+                <!-- First set of cards -->
+                <div class="card">
+                    <img src="Javascript.png" alt="Example Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">Javascript</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="html.png" alt="Example Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">HTML</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="css.png" alt="Example Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">CSS</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="node.png" alt="Example Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">Node.js</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="mongodb.png" alt="Example Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">MongoDB</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="express2.jpeg" alt="Example Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">express.js</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="git.png" alt="Example Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">git</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="github.webp" alt="Example Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">Github</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="illustrator.webp" alt="Example Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">Illusrator</h2>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="background-three">
+        <div class="aboutme">
+            <div class="box">
+                <h1>About me</h1>
+                <p>I am a Web Developer from Pune, Maharashtra. Studying in Vishwakarma Institute of Technology. I love making creative websites. Currently learning the skill and focused on mastering it.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="contact" class="background-four">
+        <h1 style="color: white;">Contact me</h1>
+        <div class="box-new">
+            <div class="name">
+                <input type="text" id="name" placeholder="Your name">
+            </div>
+            <div class="email">
+                <input type="text" id="email" placeholder="Enter Email">
+            </div>
+            <div class="message">
+                <textarea id="message" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+            </div>
+            <div class="send">
+                <button id="sendButton">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Send Message</span>
+                  </button>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i> 2024 Swami Malode. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

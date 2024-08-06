@@ -1,0 +1,649 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-one {
+    background-image: url('back.jpg');
+    height: 720px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    border:2px solid white;
+    color: white;
+    border-radius: 72px;
+    height: 80px;
+    width: 1009px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Antonio", sans-serif;
+ 
+  font-weight: 100;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    gap: 250px; /* Adjust gap between items */
+}
+
+.mid img {
+    background-color: white;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+}
+
+.text h1 {
+    font-size: 60px; 
+    font-weight: 900;
+    color: white;
+    text-align: left;
+    margin: 0;
+    font-family: "Antonio", sans-serif;
+    
+}
+
+.text h3 {
+    font-size: 30px; 
+    color: white;
+    text-align: right;
+    margin: 0;
+    font-family: "Antonio", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+/* CSS for skills section */
+
+.background-two {
+    background-image: url('back2.jpg');
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 60px; 
+    font-weight: 900;
+    color: white;
+    text-align: left;
+    margin-left:175px ;
+        font-family: "Antonio", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+.card-container {
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 50px; 
+    animation: scroll 50s linear infinite;
+}
+
+.card {
+    height: 250px;
+    width: 232px;
+    border-radius: 21px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card-image {
+    width: 180px;
+    height: 170px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-top: 20px;
+
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.card-title {
+    margin: 15px;
+    font-size: 24px;
+    color: #333;
+    font-family: "Roboto ", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+    
+}
+
+/* About section */
+.aboutme {
+    background-image: url('back2.jpg');
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutme .box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    height: 400px;
+    width: 1243px;
+    border-radius: 72px;
+    border-radius: 72px;
+
+}
+
+.aboutme .box h1 {
+    margin-left: 73px;
+    color: black;
+    font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
+.aboutme .box p {
+    margin-left: 192px;
+    margin-right: 226px;
+    margin-top: 60px;
+    font-size: 24px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact section */
+.background-four {
+    background-image: url('back2.jpg');
+    height: 793px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 0;
+    margin: 0;
+}
+
+.box-new {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    height: 500px;
+    width: 1264px;
+    margin-left: 185px;
+    border-radius: 72px;
+    display: flex;
+    margin-left: 88px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.box-new .name,
+.box-new .email,
+.box-new .message,
+.box-new .send {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.name input,
+.email input,
+.message textarea,
+.send button {
+    height: 60px; 
+    width: 100%; 
+    border-radius: 72px; 
+    padding: 0 20px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+}
+
+
+
+.message textarea {
+    width: 100%; 
+    max-width: 1300px; 
+    height: 150px;
+    box-sizing: border-box; 
+    resize: none;
+    overflow: auto; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 72px; 
+}
+
+.send button {
+    height: 60px; 
+    background-color: #007BFF;
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+
+.send button:hover {
+    background-color: #0056b3; 
+}
+.message textarea::placeholder {
+    color: #888;
+    padding: 20px;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.name input::placeholder {
+    color: #888;
+    padding: 20px;
+    font-size: 20px;
+    opacity: 1;
+}
+.email input::placeholder {
+    color: #888;
+    padding: 20px;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.copyright{
+   
+    color: black;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+/* button */
+
+/* From Uiverse.io by eirikvold */ 
+button {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+  button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  button:hover svg {
+    transform: rotate(45deg);
+  }
+
+  .navbar h3 a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .background-one {
+        background-image: url('back.jpg');
+        height: 720px;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar {
+        font-size: 10px;
+        flex-direction: row;
+        height: 40px;
+        width: 80%;
+        margin-top: 30px;
+        gap: 8px;
+    }
+
+    .mid {
+        flex-direction: column;
+        align-items: center;
+        gap: 150px;
+        margin-top: 100px;
+    }
+
+    .mid img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .text h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .text h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .background-two {
+        height: auto;
+        padding: 20px;
+    }
+
+    .card-wrapper {
+        display: flex;
+        gap: 50px; 
+        animation: scroll 15s linear infinite;
+    }
+
+    .card {
+        display: flex;
+    overflow: hidden;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    }
+    .card{
+        height: 250px;
+    width: 232px;
+    border-radius: 21px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .aboutme .box,
+    .box-new {
+        margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    height: 275px;
+    width: 80%;
+    border-radius: 72px;
+    border-radius: 72px;
+        
+    }
+    .aboutme {
+        background-image: url('back2.jpg');
+        height: 350px;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .aboutme .box h1 {
+    margin-left: 10px;
+    color: black;
+    }
+    .aboutme .box p {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 60px;
+        font-size: 24px;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    h1{
+        font-size: 60px; 
+        font-weight: 900;
+        color: white;
+        margin-left: 0px;
+        
+    } 
+
+    .aboutme .box p,
+    .box-new .name,
+    .box-new .email,
+    .box-new .message,
+    .box-new .send {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .name input,
+    .email input,
+    .message textarea,
+    .send button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .message textarea {
+        height: 120px;
+    }
+
+    .send button {
+        height: 50px;
+    }
+
+    .copyright p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+    .background-four {
+        background-image: url('back2.jpg');
+        height: 603px;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .box-new {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: #ffffff;
+        height: 400px;
+        width: 325px;
+        margin-left: 185px;
+        border-radius: 72px;
+        display: flex;
+        margin-left: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    
+    .box-new .name,
+    .box-new .email,
+    .box-new .message,
+    .box-new .send {
+        width: 80%;
+        padding: 0px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .name input,
+    .email input,
+    .message textarea,
+    .send button {
+        height: 40px; 
+        width: 300px; 
+        border-radius: 72px; 
+        padding: 0 20px; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    }
+
+    
+    
+    .message textarea {
+        width: 100%; 
+        max-width: 300px; 
+        height: 150px;
+        box-sizing: border-box; 
+        resize: none;
+        overflow: auto; 
+        padding: 10px; 
+        border: 1px solid #ccc;
+        border-radius: 72px; 
+    }
+    
+    .send button {
+        height: 60px; 
+        background-color: #007BFF;
+        color: white; 
+        border: none; 
+        cursor: pointer; 
+        font-size: 16px; 
+    }
+
+    .copyright{
+        color: black;
+        height: 25px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+}
+
+
+::-webkit-scrollbar-track {
+    background: #909090; 
+    
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
