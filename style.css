@@ -3,6 +3,13 @@ body {
     padding: 0;
 }
 
+.circular-icon {
+    width: 100px; /* desired width */
+    height: 100px; /* desired height */
+    background-image: url('logo.png');
+    background-size: cover;
+    border-radius: 50%;
+}
 .background-one {
     background-image: url('back.jpg');
     height: 720px;
