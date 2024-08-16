@@ -660,3 +660,96 @@ button {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+/* General Settings */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Main Containers */
+.background-one,
+.background-two,
+.background-four,
+.aboutme {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    max-width: 1009px; /* Ensure it doesn't exceed viewport width */
+    margin: 0 auto; /* Center it horizontally */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mid Section */
+.mid {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Card Container */
+.card-container {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Box Containers */
+.aboutme .box,
+.box-new {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure all elements respect the container boundaries */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Handle media queries */
+@media (max-width: 768px) {
+    .navbar,
+    .mid,
+    .aboutme .box,
+    .box-new {
+        width: 100%;
+        padding: 0 10px; /* Adjust padding */
+    }
+    
+    .box-new,
+    .aboutme .box {
+        margin: 0 auto;
+    }
+}
+
+/* Restricting overflow */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #909090;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
