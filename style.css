@@ -177,7 +177,7 @@ h1{
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #ffffff;
-    height: 470px;
+    height: 500px;
     width: 1243px;
     border-radius: 72px;
     border-radius: 72px;
@@ -195,7 +195,7 @@ h1{
 .aboutme .box p {
     margin-left: 192px;
     margin-right: 226px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 24px;
     color: #333;
     display: flex;
