@@ -170,6 +170,7 @@ h1{
     flex-direction: column;
     align-items: center;
     padding: 0;
+    overflow-wrap: break-word;
     margin: 0;
 }
 
