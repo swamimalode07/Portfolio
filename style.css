@@ -172,6 +172,7 @@ h1{
     padding: 0;
     overflow-wrap: break-word;
     margin: 0;
+    overflow:hidden;
     white-space: pre-line;
 }
 
