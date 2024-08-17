@@ -170,21 +170,19 @@ h1{
     flex-direction: column;
     align-items: center;
     padding: 0;
-    overflow-wrap: break-word;
     margin: 0;
-    overflow:hidden;
-    white-space: pre-line;
+    overflow-wrap: break-word ;
 }
 
 .aboutme .box {
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #ffffff;
-    height: 500px;
+    height: 470px;
     width: 1243px;
     border-radius: 72px;
     border-radius: 72px;
-    overflow:hidden;
+
 }
 
 .aboutme .box h1 {
@@ -193,19 +191,17 @@ h1{
     font-family: "Antonio", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
-    
 }
 
 .aboutme .box p {
     margin-left: 192px;
     margin-right: 226px;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 24px;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow:hidden;
 }
 
 /* Contact section */
