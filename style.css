@@ -1,15 +1,12 @@
-body {
+html ,body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
-
-.circular-icon {
-    width: 100px; /* desired width */
-    height: 100px; /* desired height */
-    background-image: url('logo.png');
-    background-size: cover;
-    border-radius: 50%;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 .background-one {
     background-image: url('back.jpg');
@@ -21,7 +18,6 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -47,7 +43,6 @@ body {
     width: 100%;
     max-width: 1200px;
     gap: 250px; /* Adjust gap between items */
-    overflow-x: hidden;
 }
 
 .mid img {
@@ -96,7 +91,6 @@ body {
     /* align-items: center; */
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 h1{
@@ -117,6 +111,7 @@ h1{
     align-items: center;
     width: 100%;
     position: relative;
+    
     
 }
 
@@ -182,7 +177,7 @@ h1{
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #ffffff;
-    height: 400px;
+    height: 470px;
     width: 1243px;
     border-radius: 72px;
     border-radius: 72px;
@@ -200,7 +195,7 @@ h1{
 .aboutme .box p {
     margin-left: 192px;
     margin-right: 226px;
-    margin-top: 60px;
+    margin-top: 20px;
     font-size: 24px;
     color: #333;
     display: flex;
@@ -425,6 +420,8 @@ button {
         align-items: center;
         gap: 150px;
         margin-top: 100px;
+        max-width: 100%;
+    padding: 0 15px;
     }
 
     .mid img {
@@ -450,7 +447,7 @@ button {
     .card-wrapper {
         display: flex;
         gap: 50px; 
-        animation: scroll 15s linear infinite;
+        animation: scroll 35s linear infinite;
     }
 
     .card {
@@ -473,13 +470,25 @@ button {
     align-items: center;
     justify-content: space-between;
     }
+    .row, .col {
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    img, .card, .navbar, .aboutme .box, .box-new {
+        max-width: 100%;
+    }
 
     .aboutme .box,
     .box-new {
         margin-top: 50px;
     margin-bottom: 50px;
     background-color: #ffffff;
-    height: 355px;
+    height: 275px;
     width: 80%;
     border-radius: 72px;
     border-radius: 72px;
@@ -495,7 +504,6 @@ button {
         align-items: center;
         padding: 0;
         margin: 0;
-        overflow: scroll;
     }
     .aboutme .box h1 {
     margin-left: 10px;
@@ -633,7 +641,7 @@ button {
         height: 25px;
         width: 100%;
         text-align: center;
-        font-size: 10px;
+        font-size: 20px;
     }
 }
 
