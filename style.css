@@ -31,7 +31,6 @@ html ,body {
     justify-content: space-around;
     align-items: center;
     font-family: "Antonio", sans-serif;
- 
   font-weight: 100;
 }
 
@@ -82,7 +81,7 @@ html ,body {
 /* CSS for skills section */
 
 .background-two {
-    background-image: url('back2.jpg');
+    background-color:#00308F;
     height: 500px;
     width: 100%;
     background-size: cover;
@@ -162,7 +161,7 @@ h1{
 
 /* About section */
 .aboutme {
-    background-image: url('back2.jpg');
+    background-color: #00308F;
     height: 500px;
     width: 100%;
     background-size: cover;
@@ -206,7 +205,7 @@ h1{
 
 /* Contact section */
 .background-four {
-    background-image: url('back2.jpg');
+    background-color: #00308F;
     height: 793px;
     width: 100%;
     background-size: cover;
@@ -397,7 +396,7 @@ button {
         padding: 0;
     }
     .background-one {
-        background-image: url('back.jpg');
+        background-color: #00308F;
         height: 720px;
         width: 100%;
         background-size: cover;
@@ -496,7 +495,7 @@ button {
         
     }
     .aboutme {
-        background-image: url('back2.jpg');
+        background-color: #00308F;
         height: 350px;
         width: 100%;
         background-size: cover;
@@ -564,7 +563,7 @@ button {
 
 
     .background-four {
-        background-image: url('back2.jpg');
+        background-color: #00308F;
         height: 603px;
         width: 100%;
         background-size: cover;
@@ -667,4 +666,59 @@ button {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 72px;
+    height: 80px;
+    width: 100%;
+    max-width: 1200px; /* Ensures the navbar doesn't stretch too much */
+    margin: 35px auto; /* Center the navbar horizontally */
+    display: flex;
+    justify-content: space-between; /* Evenly space out the links */
+    align-items: center;
+    padding: 0 30px; /* Add padding for breathing room */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: "Antonio", sans-serif;
+    font-weight: 100;
+}
+
+.navbar h3 {
+    margin: 0;
+}
+
+.navbar h3 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar h3 a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Stack the links vertically on smaller screens */
+        height: 50px;
+        padding: 10px;
+        margin-left: 5px;
+        margin-right: 2%;
+
+    }
+
+    .navbar h3 a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 10px;
+    }
+
+    .navbar h3 {
+        margin: 10px 0; /* Add margin between each link when stacked */
+    }
 }
