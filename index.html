@@ -5,86 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
-    <link rel="icon" href="logo.png" sizes="16x16" type="image/png">    
-    <link rel="stylesheet" href="styletwo.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.png" sizes="16x16" type="image/png">    
+<link rel="stylesheet" href="styletwo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <style>
-        .background-skills {
-            background-color: #00308F; /* Change to your desired background color */
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .skill-card {
-            background-color: #3f51b5; /* Card background color */
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 200px; /* Width of the skill card */
-            transition: transform 0.3s, box-shadow 0.3s; /* Hover effects */
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .skill-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .skill-bar {
-            background-color: #e0e0e0; /* Background of the skill bar */
-            border-radius: 5px;
-            height: 10px;
-            width: 100%;
-        }
-
-        .skill-level {
-            height: 100%;
-            border-radius: 5px;
-        }
-
-        .html-level { width: 90%; background-color: #ff5722; } /* HTML color */
-        .css-level { width: 85%; background-color: #2196f3; } /* CSS color */
-        .js-level { width: 80%; background-color: #f0db4f; } /* JavaScript color */
-        .react-level { width: 75%; background-color: #61dafb; } /* React color */
-        .node-level { width: 70%; background-color: #68a063; } /* Node.js color */
-        .express-level { width: 70%; background-color: #404d4d; } /* Express.js color */
-        .java-level { width: 65%; background-color: #007396; } /* Java color */
-        .mysql-level { width: 60%; background-color: #00758f; } /* MySQL color */
-        .mongodb-level { width: 65%; background-color: #47A248; } /* MongoDB color */
-        .adobe-level { width: 50%; background-color: #ff6f20; } /* Adobe Illustrator color */
-        .firebase-level { width: 55%; background-color: #ffca28; } /* Firebase color */
-        .git-level { width: 70%; background-color: #f15024; } /* Git color */
-        .github-level { width: 75%; background-color: #333; } /* GitHub color */
-        .bootstrap-level { width: 70%; background-color: #563d7c; } /* Bootstrap color */
-
-        @media (max-width: 600px) {
-            .skills-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .skill-card {
-                width: 90%; /* Responsive width */
-            }
-        }
-    </style>
 </head>
+<style>
+    .background-skills {
+    background-color:#00308F; /* Change to your desired background color */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #3f51b5; /* Card background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px; /* Width of the skill card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hover effects */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    font-size: 40px; 
+    margin-bottom: 15px; /* Space below the icon */
+    color: #3f51b5; /* Color for icons */
+}
+
+.skill-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: #e0e0e0; /* Background of the skill bar */
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.html-level {
+    width: 90%; 
+    background-color: #ff5722; 
+}
+
+.css-level {
+    width: 85%; 
+    background-color: #2196f3;
+}
+
+.js-level {
+    width: 80%; 
+    background-color: #f0db4f; 
+}
+
+.react-level {
+    width: 75%; 
+    background-color: #61dafb; 
+}
+
+.node-level {
+    width: 70%; 
+    background-color: #68a063; 
+}
+
+
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 90%; /* Responsive width */
+    }
+}
+
+
+</style>
 <body>
     <div class="background-one">
         <div class="navbar">
@@ -92,6 +112,7 @@
             <h3><a href="resume.pdf" download>Resume</a></h3>
             <h3><a href="https://www.linkedin.com/in/swami-malode-566541251/">LinkedIn</a></h3>
             <h3><a href="mailto:swamimalodeofficial@gmail.com">Contact me</a></h3>
+
         </div>
         <div class="mid">
             <img src="file.png" alt="">
@@ -136,113 +157,146 @@
                 </div>
             </div>
             <div class="skill-card">
+                <h2 class="skill-title">Node.js</h2>
+                <div class="skill-bar">
+                    <div class="skill-level node-level"></div>
+                </div>
+            </div>
+            <div class="skill-card">
                 <h2 class="skill-title">Express.js</h2>
                 <div class="skill-bar">
-                    <div class="skill-level express-level"></div>
+                    <div class="skill-level node-level"></div>
                 </div>
             </div>
             <div class="skill-card">
                 <h2 class="skill-title">Java</h2>
                 <div class="skill-bar">
-                    <div class="skill-level java-level"></div>
+                    <div class="skill-level node-level"></div>
                 </div>
             </div>
             <div class="skill-card">
                 <h2 class="skill-title">MySQL</h2>
                 <div class="skill-bar">
-                    <div class="skill-level mysql-level"></div>
+                    <div class="skill-level node-level"></div>
                 </div>
             </div>
             <div class="skill-card">
                 <h2 class="skill-title">MongoDB</h2>
                 <div class="skill-bar">
-                    <div class="skill-level mongodb-level"></div>
+                    <div class="skill-level node-level"></div>
                 </div>
             </div>
             <div class="skill-card">
-                <h2 class="skill-title">Adobe Illustrator</h2>
+                <h2 class="skill-title">Adobe illustrator</h2>
                 <div class="skill-bar">
-                    <div class="skill-level adobe-level"></div>
+                    <div class="skill-level node-level"></div>
                 </div>
             </div>
             <div class="skill-card">
                 <h2 class="skill-title">Firebase</h2>
                 <div class="skill-bar">
-                    <div class="skill-level firebase-level"></div>
+                    <div class="skill-level node-level"></div>
                 </div>
             </div>
             <div class="skill-card">
                 <h2 class="skill-title">Git</h2>
                 <div class="skill-bar">
-                    <div class="skill-level git-level"></div>
+                    <div class="skill-level node-level"></div>
                 </div>
             </div>
             <div class="skill-card">
-                <h2 class="skill-title">GitHub</h2>
+                <h2 class="skill-title">Github</h2>
                 <div class="skill-bar">
-                    <div class="skill-level github-level"></div>
+                    <div class="skill-level node-level"></div>
                 </div>
             </div>
             <div class="skill-card">
                 <h2 class="skill-title">Bootstrap</h2>
                 <div class="skill-bar">
-                    <div class="skill-level bootstrap-level"></div>
+                    <div class="skill-level node-level"></div>
                 </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+<!-- Projects -->
+<div id="projects" class="background-projects">
+    <h1>Projects</h1>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="simonsays.png" alt="Project 1" class="project-image">
+            <div class="project-content">
+                <h2 class="project-title">Simon says Game</h2>
+                <p class="project-description">This is a Simon Says game, with an Express.js backend and MongoDB for storing user data and leaderboard information.
+
+                </p>
+                <a href="https://simonsaysplay.vercel.app/" target="_blank" class="project-link">Live Link</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="coming.png" alt="Project 2" class="project-image">
+            <div class="project-content">
+                <h2 class="project-title">Project Two</h2>
+                <p class="project-description">Stay tuned for new projects
+                </p>
+                <a href="https://github.com/swamimalode07" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="coming.png" alt="Project 3" class="project-image">
+            <div class="project-content">
+                <h2 class="project-title">Project Two</h2>
+                <p class="project-description">Stay tuned for new projects</p>
+                <a href="https://github.com/swamimalode07" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+        </div>
+        
+        <!-- Add more project cards as needed -->
+    </div>
+</div>
+    <div id="about" class="background-three">
+        <div class="aboutme">
+            <div class="box">
+                <h1>About me</h1>
+                <p>I am a Web Developer from Pune, Maharashtra. Studying in Vishwakarma Institute of Technology. I love making creative websites. Currently learning the skill and focused on mastering it.</p>
             </div>
         </div>
     </div>
 
-    <!-- Projects -->
-    <div id="projects" class="background-projects">
-        <h1>Projects</h1>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="simonsays.png" alt="Project 1" class="project-image">
-                <div class="project-details">
-                    <h3>Simon Says</h3>
-                    <p>A fun and interactive game where players must repeat a sequence of lights and sounds.</p>
-                    <div class="buttons">
-                        <a href="https://github.com/your-github-repo/simonsays" class="btn">GitHub</a>
-                        <a href="https://your-live-link.com" class="btn">Live Demo</a>
-                    </div>
-                </div>
+    <!-- <div id="contact" class="background-four">
+        <h1 style="color: white;">Contact me</h1>
+        <div class="box-new">
+            <div class="name">
+                <input type="text" id="name" placeholder="Your name">
             </div>
-            <div class="project-card">
-                <img src="portfolio.png" alt="Project 2" class="project-image">
-                <div class="project-details">
-                    <h3>Portfolio Website</h3>
-                    <p>This is my personal portfolio showcasing my skills and projects.</p>
-                    <div class="buttons">
-                        <a href="https://github.com/your-github-repo/portfolio" class="btn">GitHub</a>
-                        <a href="https://your-live-link.com" class="btn">Live Demo</a>
-                    </div>
-                </div>
+            <div class="email">
+                <input type="text" id="email" placeholder="Enter Email">
             </div>
-            <div class="project-card">
-                <img src="to-do-app.png" alt="Project 3" class="project-image">
-                <div class="project-details">
-                    <h3>To-Do App</h3>
-                    <p>A simple to-do application to help manage tasks effectively.</p>
-                    <div class="buttons">
-                        <a href="https://github.com/your-github-repo/todo-app" class="btn">GitHub</a>
-                        <a href="https://your-live-link.com" class="btn">Live Demo</a>
+            <div class="message">
+                <textarea id="message" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+            </div>
+            <div class="send">
+                <button id="sendButton">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                      </div>
                     </div>
-                </div>
+                    <span>Send Message</span>
+                  </button>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="background-contact">
-        <h1>Contact Me</h1>
-        <p>If you would like to reach out, feel free to send me a message!</p>
-        <form action="#" method="post">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i> 2024 Swami Malode. All rights reserved.</p>
     </div>
-
     <script src="script.js"></script>
+
 </body>
 </html>
