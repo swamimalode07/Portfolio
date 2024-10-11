@@ -1,0 +1,147 @@
+body {
+    font-family: 'Antonio', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.background-one {
+    background-color: #282c34; /* Dark background for the header */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.navbar h3 {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #61dafb; /* Light blue color on hover */
+}
+
+.mid {
+    margin-top: 20px;
+}
+
+.mid img {
+    max-width: 150px; /* Adjust as needed */
+    border-radius: 50%; /* Circular image */
+}
+
+.text h1 {
+    font-size: 2.5rem;
+}
+
+.text h3 {
+    font-size: 1.5rem;
+}
+
+.background-skills, .background-projects, .background-three {
+    padding: 50px 20px;
+}
+
+.background-skills {
+    background-color: #f0f0f0; /* Light background for the skills section */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card, .project-card, .box {
+    background-color: #fff; /* Card background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 250px; /* Consistent width for all cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hover effects */
+    text-align: center;
+}
+
+.skill-card:hover, .project-card:hover, .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon, .project-image {
+    font-size: 40px; /* Icon size */
+    margin-bottom: 15px; /* Space below the icon */
+    color: #3f51b5; /* Color for icons */
+}
+
+.skill-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-description {
+    margin: 10px 0;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #5c6bc0; /* Lighter shade on hover */
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 70%;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card, .project-card, .box {
+        width: 90%; /* Responsive width */
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text h3 {
+        font-size: 1.2rem;
+    }
+}
